@@ -60,7 +60,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(jpr, Ender-5 Pro)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(jpr, Ender-5 Pro)" // Who made the changes. //jpr
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -87,7 +87,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO //jpr
 #endif
 
 /**
@@ -98,7 +98,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT -1
+#define SERIAL_PORT -1 //jpr
 
 /**
  * Serial Port Baud Rate
@@ -111,7 +111,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 115200 //jpr
 
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -120,8 +120,8 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 0
-#define BAUDRATE_2 115200   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
+#define SERIAL_PORT_2 0 //jpr
+#define BAUDRATE_2 115200   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE //jpr
 
 /**
  * Select a third serial port on the board to use for communication with the host.
@@ -135,7 +135,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-5 Pro"
+#define CUSTOM_MACHINE_NAME "Ender-5 Pro" //jpr
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -158,28 +158,28 @@
  *          TMC5130, TMC5130_STANDALONE, TMC5160, TMC5160_STANDALONE
  * :['A4988', 'A5984', 'DRV8825', 'LV8729', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2160', 'TMC2160_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC2209', 'TMC2209_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE', 'TMC5160', 'TMC5160_STANDALONE']
  */
-#define X_DRIVER_TYPE  TMC2209
-#define Y_DRIVER_TYPE  TMC2209
-#define Z_DRIVER_TYPE  TMC2209
-//#define X2_DRIVER_TYPE TMC2209
-//#define Y2_DRIVER_TYPE TMC2209
-#define Z2_DRIVER_TYPE TMC2209
-//#define Z3_DRIVER_TYPE TMC2209
-//#define Z4_DRIVER_TYPE TMC2209
-#define E0_DRIVER_TYPE TMC2209
-//#define E1_DRIVER_TYPE TMC2209
-//#define E2_DRIVER_TYPE TMC2209
-//#define E3_DRIVER_TYPE TMC2209
-//#define E4_DRIVER_TYPE TMC2209
-//#define E5_DRIVER_TYPE TMC2209
-//#define E6_DRIVER_TYPE TMC2209
-//#define E7_DRIVER_TYPE TMC2209
-//#define I_DRIVER_TYPE  TMC2209
-//#define J_DRIVER_TYPE  TMC2209
-//#define K_DRIVER_TYPE  TMC2209
-//#define U_DRIVER_TYPE  TMC2209
-//#define V_DRIVER_TYPE  TMC2209
-//#define W_DRIVER_TYPE  TMC2209
+#define X_DRIVER_TYPE  TMC2209 //jpr
+#define Y_DRIVER_TYPE  TMC2209 //jpr
+#define Z_DRIVER_TYPE  TMC2209 //jpr
+//#define X2_DRIVER_TYPE TMC2209 //jpr
+//#define Y2_DRIVER_TYPE TMC2209 //jpr
+#define Z2_DRIVER_TYPE TMC2209 //jpr
+//#define Z3_DRIVER_TYPE TMC2209 //jpr
+//#define Z4_DRIVER_TYPE TMC2209 //jpr
+#define E0_DRIVER_TYPE TMC2209 //jpr
+//#define E1_DRIVER_TYPE TMC2209 //jpr
+//#define E2_DRIVER_TYPE TMC2209 //jpr
+//#define E3_DRIVER_TYPE TMC2209 //jpr
+//#define E4_DRIVER_TYPE TMC2209 //jpr
+//#define E5_DRIVER_TYPE TMC2209 //jpr
+//#define E6_DRIVER_TYPE TMC2209 //jpr
+//#define E7_DRIVER_TYPE TMC2209 //jpr
+//#define I_DRIVER_TYPE  TMC2209 //jpr
+//#define J_DRIVER_TYPE  TMC2209 //jpr
+//#define K_DRIVER_TYPE  TMC2209 //jpr
+//#define U_DRIVER_TYPE  TMC2209 //jpr
+//#define V_DRIVER_TYPE  TMC2209 //jpr
+//#define W_DRIVER_TYPE  TMC2209 //jpr
 
 /**
  * Additional Axis Settings
@@ -544,7 +544,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 1 //jpr
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -627,7 +627,7 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-//#define BED_MAXTEMP      150
+//#define BED_MAXTEMP      150 //jpr
 #define BED_MAXTEMP      82  // jpr
 #define CHAMBER_MAXTEMP  60
 
@@ -668,14 +668,13 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // jpr
-    //#define DEFAULT_Kp  22.20
-    //#define DEFAULT_Ki   1.08
-    //#define DEFAULT_Kd 114.00
-    #define DEFAULT_Kp 21.73
-    #define DEFAULT_Ki 1.54
-    #define DEFAULT_Kd 76.55
-    #endif
+    //#define DEFAULT_Kp  22.20 //jpr
+    //#define DEFAULT_Ki   1.08 //jpr
+    //#define DEFAULT_Kd 114.00 //jpr
+    #define DEFAULT_Kp 21.73 //jpr
+    #define DEFAULT_Ki 1.54 //jpr
+    #define DEFAULT_Kd 76.55 //jpr
+  #endif
 #endif
 
 /**
@@ -815,8 +814,8 @@
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
-  #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of flash)
-  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash)
+  #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of flash) //jpr
+  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash) //jpr
 #endif
 
 // @section safety
@@ -1037,11 +1036,11 @@
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
-//#define USE_XMIN_PLUG
-//#define USE_YMIN_PLUG
+//#define USE_XMIN_PLUG //jpr
+//#define USE_YMIN_PLUG //jpr
 #define USE_ZMIN_PLUG
-#define USE_XMAX_PLUG
-#define USE_YMAX_PLUG
+#define USE_XMAX_PLUG //jpr
+#define USE_YMAX_PLUG //jpr
 //#define USE_IMIN_PLUG
 //#define USE_JMIN_PLUG
 //#define USE_KMIN_PLUG
@@ -1125,8 +1124,8 @@
 #define U_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define V_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define W_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
-//#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
+//#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe. //jpr
+#define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe. //jpr
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -1174,7 +1173,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.5, 80.3, 800, 138 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.5, 80.3, 800, 138 } //jpr
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1209,9 +1208,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves //jpr
+#define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts //jpr
+#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves //jpr
 
 /**
  * Default Jerk limits (mm/s)
@@ -1337,7 +1336,7 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-#define BLTOUCH
+#define BLTOUCH //jpr
 
 /**
  * MagLev V4 probe by MDD
@@ -1489,11 +1488,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -64, -22, -4.06 }
+#define NOZZLE_TO_PROBE_OFFSET { -55, -22, -0.73 } //jpr offset
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 15
+#define PROBING_MARGIN 10 //jpr
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (133*60)
@@ -1549,7 +1548,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 4
+#define MULTIPLE_PROBING 4 //jpr
 //#define EXTRA_PROBING    1
 
 /**
@@ -1960,7 +1959,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 4
+  #define GRID_MAX_POINTS_X 5 //jpr mesh
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
